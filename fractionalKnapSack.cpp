@@ -11,12 +11,12 @@ int main()
     int num,capacity,ans=0;
     cout<<"Enter the number of items:\n";
     cin>>num;
-    multimap <float,float,greater<int> > m;
+    multimap <float,float,greater<int> > m;    // to store the values in decreasing order greater<int> is used in multimap
     cout<<"\nEnter the size along with the values:\n";
     float siz,value;
     for(int i=0;i<num;++i)
          {cin>>siz>>value;
-          m.insert(pair<int,int>(value/siz,siz));
+          m.insert(pair<int,int>(value/siz,siz));     // values are as stored as per average values
          }
     cout<<"\nEnter the capacity of the Sack:\n";
     cin>>capacity;
